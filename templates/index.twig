@@ -1,5 +1,15 @@
-{% include './components/01-start.twig' %}
+{% include './components/01-start.twig' with
+  {
+    title: 'Irvings Page'
+  }
+%}
   <!-- Start Components -->
 
   <!-- End Components -->
-{% include './components/99-end.twig' %}
+{% include './components/99-end.twig' with
+  {
+    scripts: [
+      './scripts/main.js'
+    ]
+  }
+%}

@@ -5,6 +5,7 @@ var rename            = require("gulp-rename");
 const sass = require("gulp-sass")(require('sass'));
 sass.compiler         = require('node-sass');
 const twig = require('gulp-twig');
+var htmlmin = require('gulp-htmlmin');
 
 gulp.task('sass', function () {
   return gulp.src('./scss/style.scss')
@@ -13,17 +14,11 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./css'));
 });
 
-gulp.task('compileTwig', function () {
+gulp.task('twig', function () {
   return gulp.src('./templates/*.twig')
     .pipe(twig())
-    .pipe(gulp.dest('./'));
-});
-
-function compileTwig() {
-  return gulp.src('src/templates/**/*.twig')
-    .pipe(twig())
-    .pipe(gulp.dest('dist'));
-}
+    .pipe(gulp.dest('./compiled/'));
+})
 
 
 gulp.task('cssmin', function () {
@@ -39,10 +34,20 @@ gulp.task('cssrename', function () {
     .pipe(gulp.dest('./css'));
 });
 
+gulp.task('minify-html', function() {
+  return gulp.src('./compiled/*.html')
+  .pipe(htmlmin({
+    collapseWhitespace: true,
+    removeComments: true
+  }))
+  .pipe(gulp.dest('./'));
+  });
+
 gulp.task('build', gulp.series([
   'sass',
   'cssmin',
-  'compileTwig'
+  'twig',
+  'minify-html'
 ]));
 
 gulp.task('sass:watch', function () {

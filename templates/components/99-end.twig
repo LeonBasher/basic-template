@@ -1,3 +1,6 @@
-    <script src="main.js"></script>
+
+    {% for script in scripts %}
+    <script src="{{ script }}"></script>
+    {% endfor %}
   </body>
 </html>
