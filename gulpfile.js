@@ -32,7 +32,7 @@ gulp.task('twig', function () {
 
 
 gulp.task('cssmin', function () {
-  return gulp.src('./css/style.css')
+  return gulp.src(['./css/style.css'])
     .pipe(minifycss({keepSpecialComments : 0}))
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('./css'));
