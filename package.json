@@ -1,13 +1,9 @@
 {
-  "name": "contra",
+  "name": "frontend-gulp-starter-kit",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
+  "description": "This is a starter kit template with gulp technologies (twig, sass, etc.)",
+  "keywords": ["gulp", "twig", "frontend", "sass"],
+  "author": "Irving Frias",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.2.3",

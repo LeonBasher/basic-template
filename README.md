@@ -1,7 +1,7 @@
-# twig-sass
+# frontend-gulp-starter-kit
 ## Installation
 
-gulp-twig requires [Node.js](https://nodejs.org/) v18.14.1 to run.
+frontend-gulp-starter-kit requires [Node.js](https://nodejs.org/) v18.14.1 to run.
 if you has nvm, just run.
 
 ```sh
