@@ -2,7 +2,12 @@
   "name": "frontend-gulp-starter-kit",
   "version": "1.0.0",
   "description": "This is a starter kit template with gulp technologies (twig, sass, etc.)",
-  "keywords": ["gulp", "twig", "frontend", "sass"],
+  "keywords": [
+    "gulp",
+    "twig",
+    "frontend",
+    "sass"
+  ],
   "author": "Irving Frias",
   "license": "ISC",
   "dependencies": {
