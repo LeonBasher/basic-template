@@ -7,7 +7,7 @@ sass.compiler         = require('node-sass');
 const twig = require('gulp-twig');
 var htmlmin = require('gulp-htmlmin');
 var concat            = require('gulp-concat');
-const scripts_lib = './node_modules/bootstrap/dist/js/bootstrap.js';
+const scripts_lib = './node_modules/bootstrap/dist/js/bootstrap.bundle.js';
 const minify = require('gulp-minify');
 
 gulp.task('sass', function () {
