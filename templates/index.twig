@@ -1,11 +1,16 @@
 {% include './global/01-start.twig' with
   {
-    title: 'Starter Kit Template'
+    title: 'Basic Template'
   }
 %}
   <!-- Start Components -->
   <main>
-
+  {% include './containers/row-theme-dark.twig' with
+    {
+      title: 'Si funciona',
+      description: 'This is a simple text'
+    }
+  %}
   </main>
   <!-- End Components -->
 {% include './global/99-end.twig' %}

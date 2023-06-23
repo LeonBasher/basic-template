@@ -1,0 +1,27 @@
+.container{
+    max-width: 1440px;
+    
+    &.general-container{
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+  }
+
+  .container-fluid{
+    max-width: 1340px;
+  }
+
+  .superior-dropdown-container{
+    padding: 10px 0;
+  }
+
+  @include media-breakpoint-up(lg){
+    .adds-underline{
+        border-bottom: 1px #ccc solid;
+      }
+  }
+
+
+  p + p {
+    margin-top: 15px;
+  }
