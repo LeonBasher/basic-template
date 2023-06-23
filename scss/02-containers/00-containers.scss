@@ -6,22 +6,15 @@
       padding-bottom: 70px;
     }
   }
-
-  .container-fluid{
-    max-width: 1340px;
+  /*
+  * Backgrounds
+  */
+  .background-theme-light{
+    background-color: white;
+    color: #212529;
   }
-
-  .superior-dropdown-container{
-    padding: 10px 0;
-  }
-
-  @include media-breakpoint-up(lg){
-    .adds-underline{
-        border-bottom: 1px #ccc solid;
-      }
-  }
-
-
-  p + p {
-    margin-top: 15px;
+  
+  .background-theme-dark{
+    background-color: rgb(39, 39, 39);
+    color: white;
   }
